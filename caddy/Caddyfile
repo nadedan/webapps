@@ -1,0 +1,4 @@
+# Caddyfile
+:80 {
+    reverse_proxy /hello-python hello-python:5000
+}
