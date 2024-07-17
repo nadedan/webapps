@@ -8,6 +8,13 @@ services:
     ports:
       - "5000:5000"
 
+  hello-go:
+    build:
+      context: ./hello-go
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+
   caddy:
     image: caddy:latest
     ports:
