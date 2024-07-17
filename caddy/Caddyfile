@@ -1,5 +1,5 @@
 # Caddyfile
 :80 {
-    reverse_proxy /hello-python hello-python:5000
+    reverse_proxy /hello-py hello-py:5000
     reverse_proxy /hello-go hello-go:8080
 }

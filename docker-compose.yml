@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  hello-python:
+  hello-py:
     build:
       context: ./hello-python
       dockerfile: Dockerfile
@@ -22,4 +22,5 @@ services:
     volumes:
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
     depends_on:
-      - hello-python
+      - hello-py
+      - hello-go
